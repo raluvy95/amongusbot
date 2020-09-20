@@ -14,6 +14,6 @@ module.exports = {
             isDM = message.channel.type == "dm"
             e.addField(`${color[u.color]} - ${u.name}`, user.isImpostor ? isDM ? u.isImpostor ? "IMPOSTOR" : "CREWMATE" : "CREWMATE" : "CREWMATE")
         }
-        return message.channel.send(e)
+        return message.author.send(e)
     }
 }
