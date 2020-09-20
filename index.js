@@ -49,7 +49,7 @@ client.on("message", message => {
     if(command.requireAuth) {
         if(!client.game.has(message.guild.id)) return message.channel.send("It looks like the game isn't create in this server. You may use `a!create` to create")
         const user = client.game.get(message.guild.id)
-        if(!user.users.find(m => m.id == message.author.id)) return message.channel.send("You didn't joined the game, use `a!join` to join!")
+        if(!user.users.find(m => m.id == message.author.id) && command.name != "join") return message.channel.send("You didn't joined the game, use `a!join` to join!")
     }
     if (!client.cooldowns.has(command.name)) {
         client.cooldowns.set(command.name, new Discord.Collection());

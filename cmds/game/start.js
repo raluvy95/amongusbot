@@ -8,7 +8,11 @@ module.exports = {
         const ID = client.game.get(`${message.guild.id}.id`)
         client.channels.fetch(ID.channel).then(c => {
             c.messages.fetch(ID.msg).then(msg => {
-                console.log(msg)
+                const e = new client.Embed(msg.embeds[0])
+                .setTitle("Game Started!")
+                .setDescription("The game just started, now complete the tasks to win! No more accept new players.")
+                .setTitle("LIME")
+                msg.edit(e)
             })
         })
     }
