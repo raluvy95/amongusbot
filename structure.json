@@ -1,0 +1,47 @@
+{
+    "colors": [
+        {
+            "red": 0,
+            "blue": 1,
+            "yellow": 2,
+            "orange": 3,
+            "green": 4,
+            "lime": 5,
+            "cyan": 6,
+            "brown": 7,
+            "black": 8,
+            "white": 9,
+            "purple": 10,
+            "pink": 11
+        },
+        {
+            "0": "red",
+            "1": "blue",
+            "2": "yellow",
+            "3": "orange",
+            "4": "green",
+            "5": "lime",
+            "6": "cyan",
+            "7": "brown",
+            "8": "black",
+            "9": "white",
+            "10": "purple",
+            "11": "pink"
+        },
+        {
+            "red": "<:red:757223215578873876>",
+            "blue": "<:blue:757223215394324520>",
+            "yellow": "<:yellow:757223215327084566>",
+            "orange": "<:orange:757223215272689725>",
+            "green": "<:green:757223215465496688>",
+            "lime": "<:lime:757223215524216933>",
+            "cyan": "<:cyan:757223215536930876>",
+            "brown": "<:brown:757223215142666321>",
+            "black": "<:black:757223215515959296>",
+            "white": "<:white:757223215574679613>",
+            "purple": "<:purple:757223215440330842>",
+            "pink": "<:pink:757223215213969419>"
+        }
+    ],
+    "onlyName": ["red", "blue", "yellow", "orange", "green", "lime", "cyan", "brown", "black", "white", "purple", "pink"]
+}
