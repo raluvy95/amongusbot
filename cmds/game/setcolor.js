@@ -5,6 +5,7 @@ module.exports = {
     requireAuth: true,
     module: "game",
     run(message, args, client) {
+        /*
         if(!args[0]) return message.channel.send("You need to choose which color you want to pick")
         const u = client.game.get(message.guild.id)
         const user = u.users.find(r => r.id == message.author.id)
@@ -16,5 +17,7 @@ module.exports = {
         u.users.push(user)
         client.game.set(`${message.guild.id}.users`, u.users)
         message.delete()
+        */ 
+       message.author.send("The command is temportary unavaliable")
     }
 }

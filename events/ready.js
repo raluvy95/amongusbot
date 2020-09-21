@@ -1,7 +1,5 @@
 module.exports = async (client) => {
-    const colors = ["Red", "Orange", "Yellow", "Green",
-     "Cyan", "Blue", "Pink", "Purple",
-    "Black", "White"]
+    const colors = require("./../structure.json").onlyName
     setInterval(() => {
         const pickC = Math.floor(Math.random() * colors.length - 1)
         client.user.setActivity(`${colors[pickC]} kinda sus | a!help`)

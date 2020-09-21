@@ -7,7 +7,7 @@ module.exports = {
         const game = client.game.get(message.guild.id)
         if(game.users.find(m => m.id == message.author.id)) return message.channel.send("You already joined the game!")
         const pickColor = game.avaliableC[Math.floor(Math.random() * game.avaliableC.length - 1)]
-        game.avaliableC.splice(onlyName.find(m => m == pickColor), 1)
+        game.avaliableC.splice(pickColor.find(m => m == pickColor), 1)
         if (game.started) return message.channel.send("It looks like you can't join the game who already started")
         if (game.avaliableP == 0) return message.channel.send("You can't join because the game has full players")
         let chanceImpostor = true

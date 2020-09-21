@@ -2,6 +2,7 @@ module.exports = {
     name: "list",
     module: "game",
     requireAuth: true,
+    dmOnly: true,
     run: (message, args, client) => {
         const color = require("./../../structure.json").colors[2]
         const game = client.game.get(message.guild.id)
